@@ -1,7 +1,11 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+/**
+ * Root komponen hanya merender halaman sesuai rute aktif.
+ * Semua wrapper (GuestLayout / AppLayout) diatur per-view supaya
+ * halaman lain (mis. halaman publik tanpa layout) tetap fleksibel.
+ */
 </script>
 
 <template>
-  <HelloWorld />
+  <router-view />
 </template>
